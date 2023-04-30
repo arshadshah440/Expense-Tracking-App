@@ -1,0 +1,126 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.App{
+  width: 400px;
+  margin: 50px auto;
+}
+.text-green{
+  color: green;
+}
+.text-red{
+  color: red;
+}
+.h-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1,h2{
+  margin: 0px;
+  font-size: 24px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.text-center{
+  text-align: center;
+}
+h6.smallheading {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #aeaeae;
+  text-transform: capitalize;
+}
+h3,h5,h4 {
+  margin: 0px;
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  font-weight: 600;
+}
+h6 {
+  margin: 0px;
+  font-size: 14px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.comparetotal{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  border: 1px solid rgba(0,0,0,0.1);
+  
+}
+.comparetotal .totalincome{
+  padding: 20px;
+}
+.comparetotal .totalincome:first-child{
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.transaction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 10px 20px;
+}
+.haricard,.transactionform{
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+.translist{
+  margin-top: 20px;
+}
+.hb-1{
+  margin-bottom: 10px;
+}
+.form_group {
+  display: flex;
+  flex-direction: column;
+}
+.form_group label {
+  text-align: left;
+}
+.form_group input.form_input {
+  padding: 10px;
+  margin: 10px 0px;
+  accent-color:black;
+}
+input.btn.btn_primary {
+  padding: 15px 20px;
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 5px;
+}
+.transacttype{
+  padding: 10px 0px;
+}
+.transacttype label{
+  margin: 0px 10px;
+}
+.incomedone{
+  border-right:4px solid green;
+}
+.expensedone{
+  border-right:4px solid red;
+}
+
+/*** media queries **/
+@media (max-width:768px) {
+  .App{
+    width: 80vw;
+  }
+}
